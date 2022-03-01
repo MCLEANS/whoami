@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>@jack_the_nerd</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.column {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body class="w3-light-grey">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <nav class="navbar navbar-inverse w3-black" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#experience">$whoami</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#experience">Profile</a></li>
+            <li><a  href="#projects">Projects
+              <span></span></a>
+            </li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Publications & blogs</a></li>
+          </ul>
+        </div>
+      </nav>
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -30,13 +60,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
+            <br>
+            <br>
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Embedded Systems Engineer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Nairobi, Kenya</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jackagwaya@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+254719881926</p>
           <hr>
 
+          <br>
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <br>
           <p>Computer Programming (Python, PHP, C++ , C, MicroPython).</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
@@ -73,8 +107,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
           
           <br>
+          <hr>
+          <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <br>
           <p>C/C++</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
@@ -87,9 +124,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:65%"></div>
           </div>
-          <br>
+         
+          <hr>
         </div>
-      </div><br>
+      </div>
       
 
     <!-- End Left Column -->
@@ -98,7 +136,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <div id = "experience" class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Code For Africa (sensors.AFRICA), Nairobi, Kenya - IoT ENGINEER.</b></h5>
@@ -182,7 +220,68 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
   <!-- End Grid -->
   </div>
-  
+
+<div id = "projects" class="w3-container w3-card w3-white w3-margin-top" >    
+    <div class="w3-container">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-battery-three-quarters fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+        <div class="row  w3-white w3-margin-top" >
+            <div class="column w3-card ">
+                <div style="text-align: center; margin: 10%;">
+                    <p><h3>Gateway Duo</h3></p>
+                    <p><h4>
+                        The Gateway Duo is a dual gateway able to switch between WiFi and GSM connectivity for data transmission
+                        The device has an RTOS (FreeRTOS) embedded and hence has the capability to perform operations of both communication methods simultaneously.
+                    </h4></p>
+                    <video style="margin-left: 10%;" width="320" height="240" controls>
+                        <source src="clips/Enclosure_v9.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+            <div class="column w3-card ">
+                <div style="text-align: center; margin: 10%;">
+                    <h3>Noise Tracker</h3>
+                    <p><h4>
+                        Noise Tracker is a device used for Sound Pressure Level measurement. It contains a GPS for geolocation and a GSM for real time 
+                        data transmission. It is meant to be both a stationery and mobile device hence is battery powered  with charging capability.
+                    </h4></p>
+                    <video style="margin-left: 25%;" width="320" height="240" controls>
+                        <source src="clips/Enclosure_v10.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w3-white w3-margin-top">
+            <div class="column w3-card ">
+                <div style="text-align: center; margin: 10%;">
+                    <p><h3>Predictive Maintenance and Condition Monitoring Learning Kit</h3></p>
+                    <p><h4>
+                        This project looks into building a Predictive Maintenance and Condition Monitoring Learning Kit. Leveraging Robotics, IoT and Machine Learning technologies the platform will provide an ope
+                        low cost and easy to build learning kit to better equip learning laboratories and help prepare students for the 4th Industrial Revolution workforce.
+                    </h4></p>
+                    <img src="images/robot.jpeg" style="margin-left: 10%;" width="320" height="240" >
+                </div>
+            </div>
+            <div class="column w3-card ">
+                <div style="text-align: center; margin: 10%;">
+                    <h3>IoT Based School Bell</h3>
+                    <p><h4>
+                        The device is a remotely configurable school bell. Its is intergrated to an IoT dashboard that enables the user set the alarm time
+                        which is then transmitted to the device via a 2G network. The module contains a RTC that keeps track of time and a GPS to report on the modules 
+                        location twice a day.The system is easily intergratable to pre-existing manual bell systems.
+                    </h4></p> <br> 
+                    <video style="margin-left: 25%;" width="320" height="240" controls>
+                        <source src="clips/3D_school_bell_model v10.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
   <!-- End Page Container -->
 </div>
 
